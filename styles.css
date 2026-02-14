@@ -9,7 +9,6 @@ body{
     padding-bottom: 20%;
     padding-top: 15%;
     margin: auto;
-    color: white; 
 }
 #plan {
     position: fixed;
@@ -22,7 +21,6 @@ body{
 
 .h1 {
     font-size: 1400%;
-    color: white;
 }
 
 .nav-menu {
@@ -115,3 +113,4 @@ input {
     color: #7d15f5;
     transform: translateY(-5px);
 }
+
