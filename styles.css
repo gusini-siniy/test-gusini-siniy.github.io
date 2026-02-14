@@ -1,0 +1,117 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+.header {
+    z-index: 1;
+    width: 98%;
+    padding-bottom: 20%;
+    padding-top: 15%;
+    margin: auto;
+    color: white; 
+}
+#plan {
+    position: fixed;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.h1 {
+    font-size: 1400%;
+    color: white;
+}
+
+.nav-menu {
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: auto;
+    padding: 0.75%;
+}
+
+.nav-content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: end;
+}
+
+.link, .search {
+    display: inline;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    border-style: static;
+}
+
+footer {
+    padding: 2.5%;
+    background-color: black;
+    color: white;
+}
+
+.planning {
+    text-align: center;
+}
+
+.planning select{
+    border-radius: 24px;
+    font-size: x-large;
+}
+
+.planning option {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 16px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 8px 8px 32px black;
+    border-radius: 48px;
+    padding: 2.5%;
+    margin: 3.5%;
+    display: block;
+    width: 25%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border-radius: 16px;
+    padding: 0.8%;
+    border-style: none;
+    background-color: rgb(95, 9, 255);
+    color: white;
+    font-size: large;
+}
+
+input {
+    border-radius: 16px;
+    padding: 0.25% ;
+}
+
+#bgvideo {
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  height: max-content;
+  z-index: -2;
+}
+
+.video {
+    height: 50%;
+}
+
+.link-header {
+   cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link-header:hover {
+    color: #7d15f5;
+    transform: translateY(-5px);
+}
