@@ -85,6 +85,9 @@ button {
     background-color: rgb(95, 9, 255);
     color: white;
     font-size: large;
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 input {
@@ -112,5 +115,14 @@ input {
 .link-header:hover {
     color: #7d15f5;
     transform: translateY(-5px);
+}
+
+@keyframes anim1 {
+    0% {
+        background-color: rgb(95, 9, 255);
+    }
+    100% {
+        background-color: darkblue;
+    }
 }
 
