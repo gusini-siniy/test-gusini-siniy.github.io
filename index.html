@@ -3,164 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хворостовский</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Планировщик Задач</title>
-    <meta name="description" content="Gusini Siniy Githb.IO">
-    <meta name="author" content="Gusini Siniy's github>
-    <meta name="copyright content=gusini-siniy.github.io>
-    <meta name="robot" content="follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="yandex-verification" content="c91760905851ead3" />
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106945043', 'ym');
-    
-        ym(106945043, 'init', {ssr:true, clickmap:true, referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/106945043" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
-        <div class="logo">
-            <i class="fa fa-map" aria-hidden="true"></i>
-        </div>
-        <div class="nav-menu">
-            <div class="nav-content">
-                <nav>
-                    <div class="search">
-                        <input type="search" placeholder="Поиск..🔍">
-                    </div>
-                    <a class="link">Создать Маршрут</a>
-                    <a class="link">Готовые Маршруты</a>
-                    <a class="link">Услуги*</a>
-                    <button type="button">Вход</button>
-                </nav>
-            </div>
-        </div>
-    </header>
     <main>
-        <div class="video">
-            <video autoplay muted loop id="bgvideo">
-                <source src="bgvideo.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="header">
-            <h1 class="h1">Планируйте</h1>
-            <h3 class="link-header">Перёлет</h3>
-            <h3 class="link-header">Путешествие</h3>
-            <h3 class="link-header">Поездку</h3>
-        </div>
-        <div class="planning">
-            <div class="card">
-                <i>📍</i>
-                <h2>Название Места 🗼🏯</h2>
-                <select>
-                    <option>г. Москва</option>
-                    <option>г. Санкт-Петербург</option>
-                    <option>г. Новосибирск</option>
-                    <option>г. Екатеринбург</option>
-                    <option>г. Казань</option>
-                    <option>г. Нижний Новгород</option>
-                    <option>г. Красноярск</option>
-                    <option>г. Челябинск</option>
-                    <option>г. Уфа</option>
-                    <option>г. Самара</option>
-                    <option>г. Ростов-на-Дону</option>
-                    <option>г. Краснодар</option>
-                    <option>г. Омск</option>
-                    <option>г. Воронеж</option>
-                    <option>г. Пермь</option>
-                </select>
-                <h2>Места к Посещению (оставьте пустым для автоматического подбора):</h2>
-                <textarea type="text" placeholder="Например: г.Москва. Улица Пушкина. Дом 12.Строение 3" minlength="1"></textarea>
-                <h3>Когда Вылет/Выезд?</h3>
-                <input type="date">
-                <h3>Когда Прилет/Возвращение</h3>
-                <input type="date">
+        <section>            
+            <div class="image-bg">
+                <div class="hvorost-content-1">
+                    <nav><div></div></nav>
+                    <div class="info-text">
+                        <h2 class="h2-hvorost">Сайт про Дмитрия Хворостовского</h2>
+                        <h1 class="big">Хворостовский: Великий Певец</h1>
+                    </div>
+                    <div class="vstup-text">
+                        <h2>Дмитрий Александрович Хворостовский очень творческая Личность. Он писал разные альбомы, треки, давал концерты. И сегодня Я поведаю Вам о  его биографии, жизни, наследию. Приятного Просмотра!</h2>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <i>📍</i>
-                <h2>Планировщик Времени ⏰</h2>
-                <ul id="time">
-                    <li>Unnamed.</li>
-                </ul>
-                <input type="time">
-                <select>
-                    <option>Выход</option>
-                    <option>Приход</option>
-                    <option>Посещение</option>
-                </select>
-                <button type="button">Добавить в Расписание</button>
-                <br>
+        </section>
+        <section class="section-2">
+            <div class="section-2-tabs">
+                <i class="fa-solid fa-circle-info" id="info"></i>
+                <h1 class="big" id="about_project">О Проекте</h1>
+                <h2>Меня Зовут Логинов Ростислав Я из Школы №161. Я создавал этот проект более 2 месяцев. И надеюсь Вам понравится!</h2>
+                <h3>Также, хочу упомянуть, что проект доступен на всех типах устройств.</h3>
             </div>
-            <div class="card">
-                <i>📍</i>
-                <h2>Планировщик Задач 📝</h2>
-                <ul id="task">
-                    <li>Unnamed.</li>
-                </ul>
-                <textarea type="text" placeholder="Например: Поехать На Море" minlength="1"></textarea>
-                <select>
-                    <option>Срочно</option>
-                    <option>Важно</option>
-                    <option>————</option>
-                </select>
-                <button type="button">Добавить Задачу</button>
-                <br>
+        </section>
+        <section class="section-2">
+            <div class="section-2-tabs">
+                <i class="fa-solid fa-book-open"  id="biog"></i>
+                <h1 class="big" id="biography">Биография</h1>
+                <h2>Детство Хворостовского</h2>
+                <p>Дмитрий Александрович Хворостовский родился 16 октября 1962 года в Красноярске. Его семья не была особо музыкальной. Отец - Инженер-Химик, Мать - Врач.
+                    Любовь к музыке юному Хворостовскому привил отец, он пел, играл на фортепиано и собирал дома большую коллекцию записей оперных звезд. В школе юный Дима учился без особого интереса. Он начал потихоньку заниматься фортепиано и петь в детском хоре. В 14 лет он создал свою группу. Но его родители видели его только в классической музыке.</p>
             </div>
-            <div class="card">
-                <i>📍</i>
-                <h2>Планировщик Бюджета (₽) 💵</h2>
-                <ul id="money">
-                    <li>Unnamed.</li>
-                </ul>
-                <input type="number">
-                <select>
-                    <option>Расход</option>
-                    <option>Доход</option>
-                </select>
-                <button type="button">Добавить в Бюджет</button>
-                <br>
-            </div>
-            <div class="card">
-                <i>📍</i>
-                <h2>Планировщик Погоды ⛅</h2>
-                <ul id="weather">
-                    <li>Unnamed.</li>
-                </ul>
-                <h3>Дата:</h3>
-                <input type="date">
-                <h3>Температура (℃)</h3>
-                <input type="number">
-                <h3>На Улице:</h3>
-                <select>
-                    <option>Ясно</option>
-                    <option>Пасмурно</option>
-                    <option>Осадки</option>
-                </select>
-                <h3>Ветер (м/с)</h3>
-                <input type="number">
-                <button type="button">Добавить в Планировщик Погоды</button>
-                <br>
-            </div>
-            <button type="button" id="plan_trip">Спланировать Поездку</button>
-        </div>
-        <br>
+        </section>
+        <section class="section-3">
+            <div class="section-3-tabs">
+                <i class="fa-solid fa-book-open"  id="biog"></i>
+                <h1 class="big" id="biography">Наследие</h1>
+                <h2>После смерти Хворостовского, он оставил огромное наследие за собой. Ниже будет перечислены некоторые вещи, что он успел оставить общественности.</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img1.jpg" width="80%" height="70%">
+                        <h2>В школе 161</h2>
+                        <p>В моей школе есть изображение Хворостовского напротив кабинета музыки.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img2.jpg" width="80%" height="70%">
+                        <h2>Международный Аэропорт Красноярск</h2>
+                        <p>В 2019 году приказом Президента РФ аэропорту г. Красноярск было присвоено имя Дмитрия А. Хворостовского</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img1.jpg" width="80%" height="70%">
+                        <h2>В школе 161</h2>
+                        <p>В моей школе есть изображение Хворостовского напротив кабинета музыки.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img2.jpg" width="80%" height="70%">
+                        <h2>Международный Аэропорт Красноярск</h2>
+                        <p>В 2019 году приказом Президента РФ аэропорту г. Красноярск было присвоено имя Дмитрия А. Хворостовского</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img1.jpg" width="80%" height="70%">
+                        <h2>В школе 161</h2>
+                        <p>В моей школе есть изображение Хворостовского напротив кабинета музыки.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img2.jpg" width="80%" height="70%">
+                        <h2>Международный Аэропорт Красноярск</h2>
+                        <p>В 2019 году приказом Президента РФ аэропорту г. Красноярск было присвоено имя Дмитрия А. Хворостовского</p>
+                    </div>
+                </div>
+
+        </section>
     </main>
     <footer>
-        <p>Внимание! Сайт имеет исключительно развлекательное значение, не использовать для реальной навигации/планирования чего-то.</p><br>
-        <p>*Услуги не предоставляются.</p>
     </footer>
+    <script>
+        AOS.init({
+        duration: 1000,
+        once: false
+        });
+        function project () {
+            document.querySelector('#project').scrollIntoView({ 
+            behavior: 'smooth' 
+            });
+        }
+    </script>
+
+
 </body>
-
 </html>
-
-
-
